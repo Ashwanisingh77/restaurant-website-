@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Belle Cuisine - Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="logo">La Belle Cuisine</div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title fade-in">La Belle Cuisine</h1>
+        <p class="hero-tagline fade-in-delay">Where Culinary Art Meets Perfection</p>
+        <a href="#reservation" class="cta-button fade-in-delay-2">Reserve a Table</a>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <h2 class="section-title">Our Menu</h2>
+        <p class="section-subtitle">Carefully crafted dishes using the finest ingredients</p>
+
+        <div class="menu-categories">
+          <button class="category-btn active" data-category="starters">Starters</button>
+          <button class="category-btn" data-category="mains">Main Course</button>
+          <button class="category-btn" data-category="desserts">Desserts</button>
+          <button class="category-btn" data-category="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-items" id="menu-items">
+          <!-- Starters -->
+          <div class="menu-category active" data-category="starters">
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Truffle Risotto</h3>
+                <span class="price">$28</span>
+              </div>
+              <p class="item-description">Creamy arborio rice infused with black truffle oil and parmesan</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Seared Scallops</h3>
+                <span class="price">$32</span>
+              </div>
+              <p class="item-description">Pan-seared scallops with cauliflower puree and crispy prosciutto</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Foie Gras Terrine</h3>
+                <span class="price">$35</span>
+              </div>
+              <p class="item-description">House-made foie gras with toasted brioche and fig compote</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Burrata Salad</h3>
+                <span class="price">$24</span>
+              </div>
+              <p class="item-description">Fresh burrata with heirloom tomatoes, basil, and aged balsamic</p>
+            </div>
+          </div>
+
+          <!-- Main Course -->
+          <div class="menu-category" data-category="mains">
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Wagyu Beef Tenderloin</h3>
+                <span class="price">$68</span>
+              </div>
+              <p class="item-description">Premium wagyu with truffle mashed potatoes and red wine reduction</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Pan-Seared Sea Bass</h3>
+                <span class="price">$52</span>
+              </div>
+              <p class="item-description">Mediterranean sea bass with saffron risotto and lemon butter sauce</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Lamb Rack</h3>
+                <span class="price">$58</span>
+              </div>
+              <p class="item-description">Herb-crusted lamb rack with rosemary jus and seasonal vegetables</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Lobster Linguine</h3>
+                <span class="price">$62</span>
+              </div>
+              <p class="item-description">Fresh lobster with handmade pasta in white wine garlic sauce</p>
+            </div>
+          </div>
+
+          <!-- Desserts -->
+          <div class="menu-category" data-category="desserts">
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Chocolate Soufflé</h3>
+                <span class="price">$18</span>
+              </div>
+              <p class="item-description">Warm Belgian chocolate soufflé with vanilla ice cream</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Crème Brûlée</h3>
+                <span class="price">$16</span>
+              </div>
+              <p class="item-description">Classic French vanilla custard with caramelized sugar crust</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Tiramisu</h3>
+                <span class="price">$15</span>
+              </div>
+              <p class="item-description">Traditional Italian tiramisu with espresso-soaked ladyfingers</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Lemon Tart</h3>
+                <span class="price">$14</span>
+              </div>
+              <p class="item-description">Tangy lemon curd in buttery pastry with fresh berries</p>
+            </div>
+          </div>
+
+          <!-- Drinks -->
+          <div class="menu-category" data-category="drinks">
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Château Margaux 2015</h3>
+                <span class="price">$180</span>
+              </div>
+              <p class="item-description">Premier Grand Cru Classé from Bordeaux</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Dom Pérignon</h3>
+                <span class="price">$250</span>
+              </div>
+              <p class="item-description">Vintage champagne, the epitome of luxury</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Signature Cocktails</h3>
+                <span class="price">$18</span>
+              </div>
+              <p class="item-description">Craft cocktails prepared by our mixologist</p>
+            </div>
+            <div class="menu-item">
+              <div class="item-header">
+                <h3>Artisan Coffee</h3>
+                <span class="price">$8</span>
+              </div>
+              <p class="item-description">Single-origin beans, expertly brewed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">A visual journey through our culinary creations</p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fine dining dish">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Gourmet meal">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Restaurant ambiance">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/1126728/pexels-photo-1126728.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dessert">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Appetizer">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/1199957/pexels-photo-1199957.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Main course">
+            <div class="gallery-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">About Us</h2>
+            <p>Since 1995, La Belle Cuisine has been the pinnacle of fine dining excellence. Our commitment to culinary artistry and impeccable service has made us a destination for those who appreciate the finer things in life.</p>
+            <p>Led by renowned Chef Alexandre Moreau, our kitchen transforms the finest seasonal ingredients into unforgettable culinary experiences. Each dish is a masterpiece, carefully crafted to delight all your senses.</p>
+            <p>Our intimate dining room, adorned with elegant décor and soft lighting, provides the perfect ambiance for romantic dinners, business meetings, or special celebrations.</p>
+            <div class="about-stats">
+              <div class="stat">
+                <h3>28+</h3>
+                <p>Years of Excellence</p>
+              </div>
+              <div class="stat">
+                <h3>2</h3>
+                <p>Michelin Stars</p>
+              </div>
+              <div class="stat">
+                <h3>50+</h3>
+                <p>Expert Staff</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="https://images.pexels.com/photos/3201921/pexels-photo-3201921.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chef preparing food">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+      <div class="container">
+        <h2 class="section-title">Reserve a Table</h2>
+        <p class="section-subtitle">Book your extraordinary dining experience</p>
+
+        <form id="reservation-form" class="reservation-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests" required>
+                <option value="">Select</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7+">7+ Guests</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Time</label>
+              <select id="time" name="time" required>
+                <option value="">Select</option>
+                <option value="17:00">5:00 PM</option>
+                <option value="17:30">5:30 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="18:30">6:30 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="19:30">7:30 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="20:30">8:30 PM</option>
+                <option value="21:00">9:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Special Requests</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="submit-button">Reserve Table</button>
+          <div id="form-message" class="form-message"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">We'd love to hear from you</p>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Address</h3>
+                <p>123 Gourmet Street<br>New York, NY 10001</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>(212) 555-0123</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>info@labellecuisine.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Hours</h3>
+                <p>Tuesday - Sunday<br>5:00 PM - 11:00 PM<br>Closed Monday</p>
+              </div>
+            </div>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076684379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sus!4v1635959823471!5m2!1sen!2sus"
+              width="100%"
+              height="400"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>La Belle Cuisine</h3>
+            <p>Where culinary art meets perfection. An unforgettable dining experience awaits.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 La Belle Cuisine. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
